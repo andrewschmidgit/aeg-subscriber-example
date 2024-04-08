@@ -3,8 +3,6 @@ This is an example repo of how to receive an event from Azure Event Grid in the 
 
 For some reason, there's no SDK for doing this, so I had to roll it semi-manually.
 
-> NOTE: You cannot use Bun. Bun (<=1.0.36) doesn't implement `node:crypto`, and there's a sub-dependency that breaks without it.
-
 ## Setup
 Azure has different ways to deliver events, but we're specifically using the Event Grid.
 

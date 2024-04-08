@@ -27,8 +27,6 @@ export async function validate(token: string, options: TokenValidationOptions) {
     algorithms: ['RS256']
   });
   const payload = verify(token, signing_key) as JwtPayload;
-
-  console.log('payload', payload);
 }
 
 const oidc_schema = z.object({
